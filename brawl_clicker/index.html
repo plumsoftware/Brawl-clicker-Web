@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Бравл старс кликер</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<!-- Yandex Games SDK -->
+	<script src="https://yandex.ru/games/sdk/v2"></script>
+
+	<link rel="stylesheet" type="text/css" href="config.css">
+</head>
+<body>
+
+	<div class="progress_ads" id="progress_ads">
+		<h3>Загрузка рекламы...</h3>
+	</div>
+
+	<div class="row" id="row">
+		<div class="c1" id="c1">
+			<button id="ads" onclick="doubleClick()">
+				<img src="res/ui/ads.png">
+			</button>
+
+			<h2 id="h2">
+				x2
+			</h2>
+		</div>
+
+		<div class="c2" id="c2">
+			<div class="progress-bar" id="progress-bar">
+				<div class="score" id="score">
+					<img src="res/boosts/gem.png" id="gem">
+					<h3 id="h3">0</h3>
+				</div>
+			  	<div class="progress" id="progress" style="display: none;"></div>
+			</div>
+
+			<button id="hero-b" onclick="onHeroClick()">
+				<img id="hero">
+			</button>
+		</div>
+
+		<div class="c3" id="c3">
+			<div class="container">
+		        <ul class="list" id="list">
+		         
+		        </ul>
+		    </div>
+
+		    <div class="r" id="r">
+		    	<button id="bs" onclick="selectBs()">
+		    		<img src="res/ui/boost_shop.png">
+		    	</button>
+		    	<button id="hs" onclick="selectHs()">
+		    		<img src="res/ui/hero_shop.png">
+		    	</button>
+		    </div>
+		</div>
+
+		<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
